@@ -1,0 +1,139 @@
+*{
+    font-family: 'DynaPuff', cursive;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.game-container{
+    width:98%;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: 	#333333;
+    border-radius: 30px;
+    margin-bottom: 0px;
+    box-sizing: content-box;
+    border: 1px solid white;
+    
+}
+
+#headingGame{
+    animation-name: example;
+    animation-duration: .1s;
+}
+
+@keyframes example {
+    from{color: black;}
+    to{color: yellow;}
+}
+
+body{
+    background-color: #111111;
+    width: 100%;
+}
+
+/* #h1{
+    display: flex;
+    justify-content: center;
+} */
+.heading{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: fit-content;
+    margin-bottom: 0;
+}
+
+/* #randomWord{
+    display: flex;
+    justify-content: center;
+} */
+
+#score, #timer, .heading1, #word, #h1{
+    display: flex;
+    justify-content: center;
+
+}
+
+ #timer, #score{
+    margin: 0px;
+    box-sizing: content-box;
+}
+div{
+    margin-bottom: 15px;
+    margin-left: 21px;
+}
+
+#input{
+    background-color: #333333;
+    width: fit-content;
+    border: 1px solid rgb(104, 110, 110);
+    font-size: 30px;
+    text-align: center;
+    border-radius: 30px;
+    color: black; 
+    
+}
+
+#input:hover{
+    border: 1px solid white;
+    transition: all .2s linear;
+}
+
+#input:focus{
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+#btn{
+    width: 69px;
+    border: 0;
+    padding: 6px;
+    margin-left: 182px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #333333;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#btn:hover{
+    color: aliceblue;
+    transition: all .2s linear;
+}
+
+#keyboard{
+    display: flex;
+    justify-content: center;
+    background-color: #111111;
+    margin: 0;
+    padding-left: 9px;
+    padding-right: 51px;
+    margin-top: 30px;
+   
+    
+}
+
+#first-line, #sec-line, #third-line{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#div1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.kb-btn{
+    background-color: red;
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
