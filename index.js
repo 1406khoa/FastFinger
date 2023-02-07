@@ -37,36 +37,49 @@ typeWord.addEventListener("keyup", ({key}) => {
     } 
 });
 
-retry.addEventListener("click", (event) =>{
-    if(event === "click")
-    {        
-        timeReset();
-    }
-});
 
 
-retry.addEventListener("click", restart);
+
+retry.addEventListener("click", restart) 
+
 
 function timeReset(){
-    countDown.innerHTML = 10;
-    point.innerHTML = GetScore = 0
+    time = 10
     StartTheGame();
+    Timer()
+
 }
 
+
+
+// countDown
 function Timer(){
-    countDown.innerHTML = "Time " + time
-    time--;
-    if (time <= 0) {
-        restart();
+   
+    if (time <= 0 ) {
+        countDown.innerText = "Time's up"
     }
+    else{
+        countDown.innerHTML = "Time: " + time
+        time--;
+    }
+   
+   
 }
 
 function restart(){
-    point = 0;
+    point.innerText = GetScore = 0;
     time = 10;
+    Timer()
     StartTheGame()
 }
 
+// function StopTime() {
+//     if (time == 0) {
+        
+        
+//     }
+    
+// }
 
 
 
